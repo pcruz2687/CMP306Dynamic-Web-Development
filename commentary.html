@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="index.css">
+	</head>
+	<body>
+		<div class="container"><p class="h1">Basketball Teams</p></div>
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+					<a class="navbar-brand" href="login.php">Login</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.php">Week 1</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="week2.php">Week 2</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="view/week3.php">Week 3</a>
+						 </li>
+						<li class="nav-item">
+							<a class="nav-link" href="commentary.html">Commentary</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="container">
+			<h3>Week 1</h3>
+			<p>The grid system in Bootstrap breaks down the web page into columns and rows with a maximum of twelve columns across the width of the page.
+				This is useful for displaying and organising content. It also allows columns and rows within columns which further improves the simplicity of managing content.</p>
+			<p>This week I used this feature by creating a three by four grid of Bootstrap cards. Each card contains the logo of a basketball team along with its title and description below it.
+			Another useful aspect of the grid system is its ability to adapt to certain screen sizes depending on the class used which makes the website responsive.</p>
+			<p>I will implement menus using the Bootstrap navigation bar. Each week will include a dropdown menu which links to the commentary of that specific week. 
+			The navigation bar also adapts by turning into a hamburger menu which is a useful attribute for removing clutter on smaller screen sizes.</p>
+			<p>Forms will be useful for user registration, user login and adding comments to articles.</p>
+			<p>Screen reader classes will be useful for displaying elements only for screen readers, eliminating the need to read through insignificant contents. </p>
+			<p>Pagination is useful for going back to older articles. This will create better spacing and reduce the compression of multiple articles in one page.</p>
+			<p>Navs will be useful for building the navigation components. I can use it for highlighting the current page the user is on. It can also be used for navigation inside the user profile.</p>
+		
+			<h3>Week 2</h3>
+			<p><strong>Items</strong> table stores all of the item names and descriptions.</p>
+			<p><strong>Images</strong> table stores all of the images using it's image path as plain text and the image title.</p>
+			<ul>
+				<li><strong>Item Images</strong> table stores the the images used by a specific item using the item ID and the image ID.</li>
+				<li><strong>Article Images</strong> table stores the the images used by a specific article using the article ID and the image ID.</li>
+			</ul>
+			<p><strong>Articles</strong> table stores all of the article information such as ID, author, title, text, and the item ID to identify which item it belongs to.</p>
+			<p><strong>Users</strong> table stores all of the usernames and password.</p>
+			<p><strong>Comments</strong> table stores all of the comments, user ID, and article ID to identify who the comment belongs to and to which article.</p>
+			<h5>Entity Relationship Diagram</h5>
+			<p><img src="ERD.jpg" style="height:650px;width:650px;"></p>
+			<h5>Issues</h5>
+			<p>I had to create artificial tables to represent relationships for both item and article to record which item or article uses the image.</p>
+			<p>Normalisation is a must to ensure all insert, update, and deletion anomalies are eliminated because tables are joined to get accurate query results.</p>
+			<p></p>
+		</div>
+		
+		
+	  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>
